@@ -1,0 +1,122 @@
+ #top{
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #a4a2a2;
+  z-index: 1;
+}
+#top:hover{
+  background-color: #e4e4e4;
+  z-index: 1;
+}
+header .wrap{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+header .wrap h1{
+
+}
+header .wrap h1 a{
+  font-size: 0;
+  background-image: url(../img/header_logo.png);
+  display: block;
+  height: 80px;
+  width: 176px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 40px;
+  transform: translateY(-20px);
+}
+header .wrap h1 a:hover{
+  background-position-y: -40px;
+  transform: translateY(20px);
+}
+header .wrap ul{
+  display: flex;
+}
+header .wrap ul.gnb li{
+
+}
+header .wrap ul.gnb li a{
+  padding: 30px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+}
+header .wrap ul.gnb li a:hover{
+  color: #5b4c47;
+}
+header .menu::before{
+  content: "";
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: #f0efef;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  left: -12px;
+  top: calc(-34px /2 );
+}
+header .menu:hover::before{
+  
+  background-color: #5b4c47;
+}
+header .menu{
+  width: 25px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+header .menu span{
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+header .menu:hover span{
+
+  background-color: #fff;
+}
+header .wrap .sublist{
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius:30px;
+}
+header .wrap .sublist ul.menu1{
+  
+}
+header .wrap .sublist ul.menu1 li{
+}
+header .wrap .sublist ul.menu1 li a{
+  display: block;
+  line-height: 70px;
+  transform: translateX(123px);
+  padding: 0 10px;
+}
+header .wrap .sublist ul.menu2{
+  
+}
+header .wrap .sublist ul.menu2 li{
+  
+}
+header .wrap .sublist ul.menu2 li a{
+  display: block;
+  line-height: 70px;
+  transform: translateX(215px);
+  padding: 0 10px;
+}
+.show{
+  display: flex !important;
+}
